@@ -1,6 +1,8 @@
 const btn = document.querySelector("button")
 const outputme = document.querySelector(".output-you")
 const outputbot = document.querySelector(".output-bot")
+const body = document.querySelector('body')
+
 const socket = io()
 
 const SpeechRecognition =
@@ -50,4 +52,10 @@ socket.on("bot reply", (response) => {
   outputbot.textContent = texto
   botReply(texto)
   
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+  let texto = '¡Hola! es un gusto atenderte ¿Cómo puedo ayudarte? Consultas, Agendar cita, Precios de servicios'
+  outputbot.textContent = texto
+  botReply(texto)
 })
