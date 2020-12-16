@@ -22,7 +22,7 @@ io.on('connection', (client) => {
               queryInput: {
                 text: {
                   text: message,
-                  languageCode: "es-ES",
+                  languageCode: "es-HN",
                 },
               },
             }

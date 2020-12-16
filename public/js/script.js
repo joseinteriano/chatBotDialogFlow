@@ -10,7 +10,7 @@ const SpeechRecognition =
 
 const recognition = new SpeechRecognition()
 
-recognition.lang = "en-US"
+recognition.lang = "es-HN"
 recognition.interimResults = false
 
 btn.addEventListener("click", () => {
